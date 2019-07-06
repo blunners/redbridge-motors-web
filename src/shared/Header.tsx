@@ -17,6 +17,7 @@ const Header = styled.header`
 const Nav = styled.nav`
   display: flex;
   justify-content: center;
+  margin-bottom: 1rem;
 
   ul {
     list-style: none;
@@ -29,6 +30,8 @@ const Nav = styled.nav`
   li {
     display: flex;
     align-items: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 
     &:not(:last-child)::after {
       content: '';
