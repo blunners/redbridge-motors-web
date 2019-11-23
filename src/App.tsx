@@ -12,13 +12,13 @@ const About = () => (
 
 const App = () => (
   <Router>
-    <>
+    <div className="container">
       <Header />
       <main>
-        <Route exact path={Routes.home} component={Home} />
-        <Route path={Routes.about} component={About} />
+          <Route exact path={Routes.home} component={Home} />
+          <Route path={Routes.about} component={About} />
       </main>
-    </>
+    </div>
   </Router>
 );
 

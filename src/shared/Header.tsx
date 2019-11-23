@@ -5,15 +5,6 @@ import icon from '../assets/icons8-wheel-48.png';
 import logo from '../assets/logo.svg';
 import Routes from './Routes';
 
-const Header = styled.header`
-  text-align: center;
-
-  img {
-    margin: 1rem 0;
-    height: 7rem;
-  }
-`;
-
 const Nav = styled.nav`
   display: flex;
   justify-content: center;
@@ -44,6 +35,12 @@ const Nav = styled.nav`
   }
 `;
 
+const Logo = styled.img`
+  max-width: 100%;
+  max-height: 4rem;
+  margin: 1rem;
+`;
+
 const StyledNavLink = styled(NavLink)`
   color: #000;
   text-decoration: none;
@@ -58,22 +55,24 @@ const StyledNavLink = styled(NavLink)`
 `;
 
 export default () => (
-  <Header>
-    <a href="/"><img src={logo} alt="Redbridge Motors logo" /></a>
-    <Nav>
-      <ul>
-        <li>
-          <StyledNavLink exact to={Routes.home}>
-            Home
+  <div className="row text-center">
+    <div className="col-md-6 offset-md-3">
+      <a href="/"><Logo src={logo} className="mb-2" alt="Redbridge Motors logo" /></a>
+      <Nav>
+        <ul>
+          <li>
+            <StyledNavLink exact to={Routes.home}>
+              Home
           </StyledNavLink>
-        </li>
-        <li>
-          <StyledNavLink to={Routes.about}>About</StyledNavLink>
-        </li>
-        <li>
-          <StyledNavLink to={Routes.findMyCar}>Car Finder</StyledNavLink>
-        </li>
-      </ul>
-    </Nav>
-  </Header>
+          </li>
+          <li>
+            <StyledNavLink to={Routes.about}>About</StyledNavLink>
+          </li>
+          <li>
+            <StyledNavLink to={Routes.findMyCar}>Car Finder</StyledNavLink>
+          </li>
+        </ul>
+      </Nav>
+    </div>
+  </div>
 );
