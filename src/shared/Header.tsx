@@ -59,7 +59,7 @@ const StyledNavLink = styled(NavLink)`
 
 export default () => (
   <Header>
-    <img src={logo} alt="Redbridge Motors logo" />
+    <a href="/"><img src={logo} alt="Redbridge Motors logo" /></a>
     <Nav>
       <ul>
         <li>
