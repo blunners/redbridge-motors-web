@@ -76,7 +76,7 @@ export default () => (
             <StyledNavLink to={Routes.about}>About</StyledNavLink>
           </li>
           <li>
-            <StyledLink href="https://www.ebay.co.uk/sch/redfifty/m.html?_nkw=&_armrs=1&_ipg=&_from=" target="_blank">Our Listings</StyledLink>
+            <StyledLink href="https://www.ebay.co.uk/sch/redfifty/m.html?_nkw=&_armrs=1&_ipg=&_from=" target="_blank">Our Listings [eBay]</StyledLink>
           </li>
           <li>
             <StyledNavLink to={Routes.findMyCar}>Car Finder</StyledNavLink>

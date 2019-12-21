@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import us from '../../assets/rod-and-elaine.jpg';
+import { Link } from 'react-router-dom';
+import Routes from '../../shared/Routes';
 
 const Family = styled.img`
 `;
@@ -14,10 +16,12 @@ export default () => (
         <p>Redbridge Motor Company is one of the longest established motor businesses in the Peterborough/Cambridgeshire area.
           The business is run by Rod & Elaine Blundell.
         </p>
-        <p>To remain competitive and reduce overheads we now operate from our own home and primarily source cars on request. 
+        <p>To remain competitive and reduce overheads we now operate from our own home and primarily source cars on request.
           We have a wealth of trade knowledge and experience to source both the car of your dreams, and the daily run around.
         </p>
         <h2>We Source</h2>
+        <p>We have a wealth of experience in finding what our customers really want. We can't stock everything, but give us a brief and we'll find exactly what you're looking for, in a timely manner.
+          Click <Link to={Routes.findMyCar}>here</Link> to send us your requirements and we'll get back to you ASAP.</p>
         <h2>We Part Exchange</h2>
         <h2>We Offer Flexible Finance Packages</h2>
       </div>
