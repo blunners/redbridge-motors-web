@@ -1,9 +1,21 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import icon from '../assets/icons8-wheel-48.png';
 import logo from '../assets/logo.svg';
 import Routes from './Routes';
+
+const linkStlye = css`
+color: #000;
+  text-decoration: none;
+
+  &:hover {
+    color: gray;
+  }
+
+  &.active {
+    text-decoration: underline;
+  }`;
 
 const Nav = styled.nav`
   display: flex;
@@ -37,21 +49,16 @@ const Nav = styled.nav`
 
 const Logo = styled.img`
   max-width: 100%;
-  max-height: 4rem;
+  max-height: 5rem;
   margin: 1rem;
 `;
 
 const StyledNavLink = styled(NavLink)`
-  color: #000;
-  text-decoration: none;
+  ${linkStlye}
+`;
 
-  &:hover {
-    color: gray;
-  }
-
-  &.active {
-    text-decoration: underline;
-  }
+const StyledLink = styled.a`
+  ${linkStlye}
 `;
 
 export default () => (
@@ -67,6 +74,9 @@ export default () => (
           </li>
           <li>
             <StyledNavLink to={Routes.about}>About</StyledNavLink>
+          </li>
+          <li>
+            <StyledLink href="https://www.ebay.co.uk/sch/redfifty/m.html?_nkw=&_armrs=1&_ipg=&_from=" target="_blank">Our Listings</StyledLink>
           </li>
           <li>
             <StyledNavLink to={Routes.findMyCar}>Car Finder</StyledNavLink>
