@@ -23,7 +23,12 @@ export default () => (
         <p>We have a wealth of experience in finding what our customers really want. We can't stock everything, but give us a brief and we'll find exactly what you're looking for, in a timely manner.
           Click <Link to={Routes.findMyCar}>here</Link> to send us your requirements and we'll get back to you ASAP.</p>
         <h2>We Part Exchange</h2>
+        <p>Have an old vehicle that you'd like to use to help towards the cost of your new wheels? We are happy to give you a competitive price for
+          you current vehicle to help you cover the cost of your shiny new one. For a no onbligation quote, give us a call on&nbsp;
+          <a href="tel:01733321923">01733 321923</a> or contact us via <a href="mailto:sales@redbridgemotors.co.uk">sales@redbridgemotors.co.uk</a>.
+        </p>
         <h2>We Offer Flexible Finance Packages</h2>
+        <p>Why wait for your dream car? We work closely with finance providers to get you a competitive rate towards your new purchase.</p>
       </div>
       <div className="col">
         <Family src={us} className="img-fluid" />
