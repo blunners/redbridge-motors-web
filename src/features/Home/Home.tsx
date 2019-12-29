@@ -21,6 +21,7 @@ export default () => (
         </p>
         <h2>We Source</h2>
         <p>We have a wealth of experience in finding what our customers really want. We can't stock everything, but give us a brief and we'll find exactly what you're looking for, in a timely manner.
+          We have multiple tools and contacts at our fingertips, to help us source what you require.
           Click <Link to={Routes.findMyCar}>here</Link> to send us your requirements and we'll get back to you ASAP.</p>
         <h2>We Part Exchange</h2>
         <p>Have an old vehicle that you'd like to use to help towards the cost of your new wheels? We are happy to give you a competitive price for

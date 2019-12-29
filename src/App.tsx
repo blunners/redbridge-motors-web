@@ -5,19 +5,12 @@ import Header from "./shared/Header";
 import Routes from "./shared/Routes";
 import { Footer } from "./shared/Footer";
 
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-);
-
 const App = () => (
   <Router>
     <div className="container content">
       <Header />
       <main>
         <Route exact path={Routes.home} component={Home} />
-        <Route path={Routes.about} component={About} />
       </main>
     </div>
     <Footer />

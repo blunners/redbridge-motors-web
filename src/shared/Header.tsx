@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import icon from '../assets/icons8-wheel-48.png';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo.png';
 import Routes from './Routes';
 
 const linkStlye = css`
@@ -71,9 +71,6 @@ export default () => (
             <StyledNavLink exact to={Routes.home}>
               Home
           </StyledNavLink>
-          </li>
-          <li>
-            <StyledNavLink to={Routes.about}>About</StyledNavLink>
           </li>
           <li>
             <StyledLink href="https://www.ebay.co.uk/sch/redfifty/m.html?_nkw=&_armrs=1&_ipg=&_from=" target="_blank">Our Listings [eBay]</StyledLink>
