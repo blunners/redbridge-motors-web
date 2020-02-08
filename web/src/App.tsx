@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./features/Home/Home";
+import Home from "./features/home/Home";
+import { Footer } from "./shared/Footer";
 import Header from "./shared/Header";
 import Routes from "./shared/Routes";
-import { Footer } from "./shared/Footer";
 
 const App = () => (
   <Router>
