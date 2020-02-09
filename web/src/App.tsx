@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { ContactUs } from "./features/contact-us/ContactUs";
 import Home from "./features/home/Home";
 import { Footer } from "./shared/Footer";
 import Header from "./shared/Header";
@@ -11,6 +12,7 @@ const App = () => (
       <Header />
       <main>
         <Route exact path={Routes.home} component={Home} />
+        <Route exact path={Routes.contactUs} component={ContactUs} />
       </main>
     </div>
     <Footer />

@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import icon from '../assets/icons8-wheel-48.png';
 import logo from '../assets/logo.png';
+import { EbayUrl } from './Constants';
 import Routes from './Routes';
 
 const linkStlye = css`
@@ -70,13 +71,13 @@ export default () => (
           <li>
             <StyledNavLink exact to={Routes.home}>
               Home
-          </StyledNavLink>
+            </StyledNavLink>
           </li>
           <li>
-            <StyledLink href="https://www.ebay.co.uk/sch/redfifty/m.html?_nkw=&_armrs=1&_ipg=&_from=" target="_blank">Our Listings [eBay]</StyledLink>
+            <StyledLink href={EbayUrl} target="_blank" rel="noopener noreferrer">Our Listings [eBay]</StyledLink>
           </li>
           <li>
-            <StyledNavLink to={Routes.findMyCar}>Car Finder</StyledNavLink>
+            <StyledNavLink to={Routes.contactUs}>Contact Us</StyledNavLink>
           </li>
         </ul>
       </Nav>

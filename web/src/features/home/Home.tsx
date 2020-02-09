@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import us from '../../assets/rod-and-elaine.jpg';
-import { Link } from 'react-router-dom';
+import { EbayUrl, Email, Phone } from '../../shared/Constants';
 import Routes from '../../shared/Routes';
 
 const Family = styled.img`
@@ -16,17 +17,17 @@ export default () => (
         <p>Redbridge Motor Company is one of the longest established motor businesses in the Peterborough/Cambridgeshire area.
           The business is run by Rod & Elaine Blundell.
         </p>
-        <p>To remain competitive and reduce overheads we now operate from our own home and primarily source cars on request.
+        <p>To remain competitive and reduce overheads we now operate from the comfort of a home office and primarily source cars on request (although we do occassionally have stock on hand. See <a href={EbayUrl} target="_blank" rel="noopener noreferrer">our listings</a>).
           We have a wealth of trade knowledge and experience to source both the car of your dreams, and the daily run around.
         </p>
         <h2>We Source</h2>
         <p>We have a wealth of experience in finding what our customers really want. We can't stock everything, but give us a brief and we'll find exactly what you're looking for, in a timely manner.
           We have multiple tools and contacts at our fingertips, to help us source what you require.
-          Click <Link to={Routes.findMyCar}>here</Link> to send us your requirements and we'll get back to you ASAP.</p>
+          Click <Link to={Routes.contactUs}>here</Link> to send us your requirements and we'll get back to you ASAP.</p>
         <h2>We Part Exchange</h2>
         <p>Have an old vehicle that you'd like to use to help towards the cost of your new wheels? We are happy to give you a competitive price for
           you current vehicle to help you cover the cost of your shiny new one. For a no onbligation quote, give us a call on&nbsp;
-          <a href="tel:01733321923">01733 321923</a> or contact us via <a href="mailto:sales@redbridgemotors.co.uk">sales@redbridgemotors.co.uk</a>.
+          <a href={`tel:${Phone}`}>01733 321923</a> or contact us via <a href={`mailto:${Email}`}>sales@redbridgemotors.co.uk</a>.
         </p>
         <h2>We Offer Flexible Finance Packages</h2>
         <p>Why wait for your dream car? We work closely with finance providers to get you a competitive rate towards your new purchase.</p>
