@@ -2,15 +2,12 @@ import DocmentTextImg from 'bootstrap-icons/icons/document-text.svg';
 import EnvelopeImg from 'bootstrap-icons/icons/envelope.svg';
 import PhoneImg from 'bootstrap-icons/icons/phone.svg';
 import React, { useState } from 'react';
-import { Email, Phone } from '../../shared/Constants';
+import { ContactUrl, Email, Phone } from '../../shared/Constants';
 
 const onSubmit = async (e: React.FormEvent<HTMLFormElement>, details: Details) => {
-  await fetch('http://localhost:7071/api/get-in-touch', {
+  await fetch(ContactUrl, {
     method: 'POST',
     mode: 'cors',
-    headers: {
-      'Content-Type': 'application/json'
-    },
     body: JSON.stringify(details)
   });
 }
@@ -95,7 +92,7 @@ export const ContactUs = () => {
         <div className="alert alert-success" role="alert">
           Request submitted successfully! We'll get back to you as soon as possible.
         </div>) : (
-          <div className="row">
+          <div className="row mb-3">
             <div className="col-md-6">
               <form onSubmit={async (e) => {
                 e.preventDefault();
