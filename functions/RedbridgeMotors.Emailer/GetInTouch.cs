@@ -15,7 +15,7 @@ namespace RedbridgeMotors.Emailer
     {
         [FunctionName("get-in-touch")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)]GetInTouchRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)]GetInTouchRequest req,
             [SendGrid(ApiKey = "SendGridApiKey")] IAsyncCollector<SendGridMessage> messageCollector,
             ILogger log,
             CancellationToken cancellationToken,
