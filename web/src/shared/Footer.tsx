@@ -17,11 +17,11 @@ const Footer = () =>
     <div className="container">
       <div className="row text-light">
         <div className="col-md-5">
-          Question? Contact us @ <a href="mailto:sales@redbridgemotors.co.uk">sales@redbridgemotors.co.uk</a>
+          <div className="d-none d-md-block">Question? Contact us @ <a href="mailto:sales@redbridgemotors.co.uk">sales@redbridgemotors.co.uk</a></div>
         </div>
         <div className="col text-right">
           © Redbridge Motor Company Ltd.
-      </div>
+        </div>
       </div>
     </div>
   </StyledFooter>

@@ -6,6 +6,7 @@ import { EbayUrl, Email, Phone } from '../../shared/Constants';
 import Routes from '../../shared/Routes';
 
 const Family = styled.img`
+  padding: 1rem;
 `;
 
 export default () => (
