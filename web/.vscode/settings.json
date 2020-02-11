@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/2183b6c5-d882-4a49-a38f-68d73f1f3472/resourceGroups/RedbridgeMotors/providers/Microsoft.Web/sites/redbridgemotors",
+  "appService.deploySubpath": "build"
+}
