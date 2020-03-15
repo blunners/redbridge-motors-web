@@ -50,7 +50,7 @@ const Nav = styled.nav`
 
 const Logo = styled.img`
   max-width: 100%;
-  max-height: 5rem;
+  max-height: 15rem;
   margin: 1rem;
 `;
 
