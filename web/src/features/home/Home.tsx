@@ -20,7 +20,7 @@ export default () => (
         <p>We have a wealth of trade knowledge and experience to hand to supply your new vehicle; prestige, sports, van, or the daily run around.</p>
         <h2>We Purchase &amp; Part Exchange</h2>
         <p>Have an old vehicle that you'd like to use to help towards the cost of your new wheels? We are happy to give you a competitive price for
-          you current vehicle to help you cover the cost of your shiny new one. For a no onbligation quote, give us a call on&nbsp;
+          you current vehicle to help you cover the cost of your shiny new one. For a no obligation quote, give us a call on&nbsp;
           <a href={`tel:${Phone}`}>07976 843677</a> or contact us via <a href={`mailto:${Email}`}>sales@redbridgemotors.co.uk</a>.
         </p>
         <h2>We Offer Flexible Finance Packages</h2>
