@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import us from '../../assets/rod-and-elaine.jpg';
-import { EbayUrl, Email, Phone } from '../../shared/Constants';
-import Routes from '../../shared/Routes';
+import { Email, Phone } from '../../shared/Constants';
 
 const Family = styled.img`
   padding: 1rem;

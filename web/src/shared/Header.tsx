@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import icon from '../assets/icons8-wheel-48.png';
 import logo from '../assets/logo.png';
-import { EbayUrl } from './Constants';
 import Routes from './Routes';
 
 const linkStlye = css`
@@ -51,14 +50,10 @@ const Nav = styled.nav`
 const Logo = styled.img`
   max-width: 100%;
   max-height: 15rem;
-  margin: 1rem;
+  margin-top: 1rem;
 `;
 
 const StyledNavLink = styled(NavLink)`
-  ${linkStlye}
-`;
-
-const StyledLink = styled.a`
   ${linkStlye}
 `;
 
@@ -74,7 +69,7 @@ export default () => (
             </StyledNavLink>
           </li>
           <li>
-            <StyledLink href={EbayUrl} target="_blank" rel="noopener noreferrer">Our Listings [eBay]</StyledLink>
+            <StyledNavLink exact to={Routes.listings}>Listings</StyledNavLink>
           </li>
           <li>
             <StyledNavLink to={Routes.contactUs}>Contact Us</StyledNavLink>

@@ -1,4 +1,5 @@
 export default {
   home: "/",
-  contactUs: "/contact-us"
+  contactUs: "/contact-us",
+  listings: "/listings",
 };
