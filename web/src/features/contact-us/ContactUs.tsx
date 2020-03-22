@@ -117,7 +117,11 @@ export const ContactUs = () => {
                 <ContactPreferences onContactSet={c => {
                   setDetails({ ...details, contact: c });
                 }} />
-                <input type="submit" value="Submit" className="btn btn-primary" disabled={!formValid || submitting} />
+                <button type="submit" className="btn btn-primary" disabled={!formValid || submitting}>
+                  Submit {submitting && <div className="spinner-border" style={{ width: '1.1rem', height: '1.1rem', borderWidth: '0.15rem' }} role="status">
+                    <span className="sr-only">Loading...</span>
+                  </div>}
+                </button>
               </form>
             </div>
           </div>
