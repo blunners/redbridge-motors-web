@@ -16,7 +16,7 @@ export default () => (
         <p>We specialise in the procurement of vans and cars of all makes &amp; ilks, be it low budget or high budget, sports or prestige etc.</p>
         <p>Redbridge Motor Company is one of the longest established motor businesses in the Peterborough/Cambridgeshire area. The business is run by husband-wife team, Rod &amp; Elaine Blundell.</p>
         <h2>We Procure/Stock</h2>
-        <p>We now operate from our home office, and procure as well as stock at our site, Tallington Service Station, PE9 4RN.</p>
+        <p>We now operate from our home office (50 Redbridge, Werrington, Peterborough, PE4 5DP), and procure as well as stock at our site, Tallington Service Station, PE9 4RN.</p>
         <p>We have a wealth of trade knowledge and experience to hand to supply your new vehicle; prestige, sports, van, or the daily run around.</p>
         <h2>We Purchase &amp; Part Exchange</h2>
         <p>Have an old vehicle that you'd like to use to help towards the cost of your new wheels? We are happy to give you a competitive price for
